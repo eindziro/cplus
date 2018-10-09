@@ -2,13 +2,18 @@
 
 
 using namespace std;
+int _geek::Mult5(int a)
+{
+	return a*5;
+
+}
+using _geek::Mult5;
 
 int main(int argc, char** args)
 {
 	int a = 2;
-	int b = 3;
-	int c = _geek::Mult5(a);
-	cout << "c = "<< c<< endl;
+	
+	cout << "c = "<< Mult5(a)<< endl;
 	return 0;
 	
 }
